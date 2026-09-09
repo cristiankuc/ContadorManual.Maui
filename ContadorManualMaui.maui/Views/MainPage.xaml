@@ -4,8 +4,7 @@
              x:Class="ContadorManualMaui.maui.Views.MainPage"
              Title="Contador manual"
              BackgroundColor="White">
-    <StackLayout
-        Orientation="Vertical"
+    <VerticalStackLayout
         Spacing="16"
         Margin="16"
         Padding="12">
@@ -47,6 +46,6 @@
                 />
         </HorizontalStackLayout>
         
-    </StackLayout>
+    </VerticalStackLayout>
     
 </ContentPage>
