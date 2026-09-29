@@ -18,7 +18,7 @@
         <Border Stroke="Black"
                 StrokeThickness="2">
                 <Label
-                   Text="10"
+                   Text="{Binding Path=Conteo}"
                    TextColor="Black"
                    Margin="16"
                    Padding="24"
@@ -26,7 +26,7 @@
                    VerticalOptions="Start"
                    FontSize="Large"
                    FontAttributes="Bold"
-                    x:Name="LabelConteo"
+
                  />
         </Border>
        
