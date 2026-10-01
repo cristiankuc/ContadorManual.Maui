@@ -29,7 +29,27 @@
 
                  />
         </Border>
-       
+        <HorizontalStackLayout
+            Spacing="8">
+            <Label
+                TextColor="Black"
+                VerticalOptions="Center"
+                Text="Incrementar">
+                
+            </Label>
+            <Entry
+                BackgroundColor="WhiteSmoke"
+                IsReadOnly="True"
+                Text="{Binding Source={x:Reference IncrementoStepper},Path=Value}" />
+
+           
+            <Stepper Background="Black" 
+                     Minimum="1"
+                     Maximum="20"
+                     Increment="1"
+                     x:Name="IncrementoStepper"
+                     Value="{Binding Path=Incremento}"></Stepper>
+        </HorizontalStackLayout>
         <HorizontalStackLayout
             HorizontalOptions="Center"
             Margin="0,24,0,0"

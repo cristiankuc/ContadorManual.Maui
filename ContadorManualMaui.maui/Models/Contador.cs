@@ -8,6 +8,7 @@ namespace ContadorManualMaui.maui.Models
     public class Contador : INotifyPropertyChanged
     {
         private int _conteo;
+        private int _incremeto;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -23,13 +24,26 @@ namespace ContadorManualMaui.maui.Models
                 }
             }
         }
+        public int Incremento
+        {
+            get => (_incremeto);
+            set
+            {
+                if (_incremeto  != value)
+                
+                    { 
+                    _incremeto = value;
+                    } 
+            }
+        }
         public Contador()
         {
             Conteo = 0;
+            Incremento = 1;
         }
         public void Contar()
         {
-            Conteo++;
+            Conteo +=Incremento;
         }
         public void Reiniciar()
         {
